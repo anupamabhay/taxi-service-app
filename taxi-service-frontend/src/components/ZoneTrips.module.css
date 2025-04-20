@@ -1,0 +1,95 @@
+
+/* ZoneTrips.module.css */
+.container {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  background-color: #fffdfd; /* Very light off-white/pinkish */
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #333;
+  font-weight: 600;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em; /* Spacing between form groups */
+}
+
+.formGroup {
+  display: flex;
+  align-items: center; /* Align label and input vertically */
+  gap: 0.5em;
+}
+
+.label {
+  min-width: 90px; /* Align inputs */
+  font-weight: 500;
+}
+
+.select,
+.input {
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button {
+  padding: 8px 15px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #e6e6fa; /* Light pastel lavender */
+  border-radius: 4px;
+  font-weight: 500;
+  align-self: flex-start; /* Prevent button stretching */
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.button:hover:not(:disabled) {
+   background-color: #dcd0ff;
+}
+
+.loadingMsg,
+.errorMsg {
+  margin-top: 1em;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.loadingMsg {
+  color: #31708f;
+  background-color: #d9edf7;
+}
+
+.errorMsg {
+  color: #a94442;
+  background-color: #f2dede;
+  font-weight: bold;
+}
+
+.resultsBox {
+  margin-top: 1.5em;
+  padding: 10px;
+  border: 1px solid #e6e6fa; /* Match button */
+  border-radius: 4px;
+  background-color: #f9f9ff;
+}
+
+.resultsBox h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.resultsBox p {
+    margin: 5px 0;
+}

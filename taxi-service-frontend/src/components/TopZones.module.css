@@ -1,0 +1,78 @@
+/* TopZones.module.css */
+.container {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0; 
+    border-radius: 5px;
+    background-color: #fdfdff; 
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 600;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.radioGroup label {
+    margin-right: 1.5em;
+    cursor: pointer;
+}
+
+.loadingMsg,
+.errorMsg {
+    margin-top: 1em;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.loadingMsg {
+    color: #31708f; 
+    background-color: #d9edf7; 
+}
+
+.errorMsg {
+    color: #a94442; 
+    background-color: #f2dede; 
+    font-weight: bold;
+}
+
+.dataTable {
+    margin-top: 1em;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 500px; 
+    border: 1px solid #ddd;
+}
+
+.dataTable th,
+.dataTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.dataTable th {
+    background-color: #eef2f7; 
+    font-weight: 600;
+    white-space: nowrap;
+    padding: 8px 10px;
+}
+
+.dataTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.dataTable td:first-child, /* Rank */
+.dataTable td:last-child { /* Count */
+    text-align: center;
+    width: 60px;
+}
+
+.noData {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+}

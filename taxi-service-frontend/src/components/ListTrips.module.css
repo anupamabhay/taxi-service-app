@@ -1,0 +1,149 @@
+/* ListTrips.module.css */
+.container {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  background-color: #f8f9fa; /* Light grey */
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #333;
+  font-weight: 600;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+.controlsContainer {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 1.5em; /* Spacing between filter/sort */
+  margin-bottom: 1em;
+  padding: 10px;
+  border: 1px solid #eee;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.filterBox,
+.sortBox {
+  flex: 1; /* Allow boxes to grow */
+  min-width: 250px; /* Minimum width before wrapping */
+}
+
+.filterBox h4,
+.sortBox h4 {
+    margin-top: 0;
+    margin-bottom: 0.8em;
+    font-size: 1.05em;
+}
+
+.filterGroup {
+  display: block; /* Stack filters vertically */
+  margin-bottom: 0.8em;
+}
+
+.filterGroup label {
+   margin-right: 0.5em;
+   min-width: 90px;
+   display: inline-block; /* Align labels */
+   font-weight: 500;
+}
+
+.select,
+.input {
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 1em; /* Space between filter elements */
+}
+
+.sortBox label {
+    margin-right: 0.5em;
+    font-weight: 500;
+}
+
+.loadingMsg,
+.errorMsg {
+  margin-top: 1em;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.loadingMsg {
+  color: #31708f;
+  background-color: #d9edf7;
+}
+
+.errorMsg {
+  color: #a94442;
+  background-color: #f2dede;
+  font-weight: bold;
+}
+
+.dataTable {
+  margin-top: 1em;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+.dataTable th,
+.dataTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.dataTable th {
+  background-color: #f0f4f8; /* Light pastel blue/grey header */
+  font-weight: 600;
+}
+
+.dataTable tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Zebra striping */
+}
+
+.dataTable td {
+  font-size: 0.95em;
+}
+
+.noData {
+  text-align: center;
+  padding: 1em !important;
+  font-style: italic;
+  color: #777;
+}
+
+.pagination {
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-between; /* Space out buttons and info */
+  align-items: center;
+  flex-wrap: wrap; /* Wrap on small screens */
+  gap: 1em;
+}
+
+.pagination button {
+   padding: 5px 10px;
+   cursor: pointer;
+   border: 1px solid #ccc;
+   background-color: #fff0f5; /* Lavender blush */
+   border-radius: 4px;
+}
+
+.pagination button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+.pagination button:hover:not(:disabled) {
+    background-color: #ffe4e1; /* Misty rose */
+}
+
+.pagination select {
+    padding: 5px;
+}
